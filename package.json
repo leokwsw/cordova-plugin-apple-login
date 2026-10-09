@@ -1,6 +1,6 @@
 {
   "name": "@leokwsw/cordova-plugin-apple-login",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cordova plugin for Sign in with Apple. iOS native code is written in Swift.",
   "author": {
     "name": "Leo Wu",
