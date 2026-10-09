@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-apple-login"
+        version="1.0.1">
+    <name>cordova-plugin-apple-login</name>
+    <author email="leokwsw@gmail.com" href="https://github.com/leokwsw">Leo Wu</author>
+    <description>Sign in with Apple for Cordova. The iOS implementation is written in Swift.</description>
+    <license>MIT</license>
+    <keywords>cordova,apple,signin,sign in with apple</keywords>
+
+    <engines>
+        <engine name="cordova-ios" version=">=6.0.0" />
+    </engines>
+
+    <js-module name="SignInWithApple" src="www/sign-in-with-apple.js">
+        <clobbers target="SignInWithApple" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="SignInWithApple">
+                <param name="ios-package" value="SignInWithApple" />
+            </feature>
+        </config-file>
+
+        <config-file target="*-Debug.plist" parent="com.apple.developer.applesignin">
+            <array>
+                <string>Default</string>
+            </array>
+        </config-file>
+        <config-file target="*-Release.plist" parent="com.apple.developer.applesignin">
+            <array>
+                <string>Default</string>
+            </array>
+        </config-file>
+
+        <framework src="AuthenticationServices.framework" weak="true" />
+        <source-file src="src/ios/SignInWithApple.swift" />
+    </platform>
+</plugin>

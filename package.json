@@ -1,0 +1,41 @@
+{
+  "name": "@leokwsw/cordova-plugin-apple-login",
+  "version": "1.0.1",
+  "description": "Cordova plugin for Sign in with Apple. iOS native code is written in Swift.",
+  "author": {
+    "name": "Leo Wu",
+    "email": "leokwsw@gmail.com",
+    "url": "https://github.com/leokwsw"
+  },
+  "types": "types/index.d.ts",
+  "cordova": {
+    "id": "cordova-plugin-apple-login",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "cordova-ios",
+    "ecosystem:cordova",
+    "apple",
+    "sign in with apple",
+    "signin"
+  ],
+  "license": "MIT",
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.0": {
+        "cordova-ios": ">=6.0.0"
+      }
+    }
+  },
+  "linkedPackage": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leokwsw/cordova-plugin-apple-login.git"
+  }
+}
